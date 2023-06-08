@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { GlobalStyles } from './GlobalStyles'
@@ -7,10 +6,12 @@ import Footer from './components/Footer'
 import App from './App'
 import BlogSection from './components/BlogSection'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const rootElement = document.getElementById('root')
 
-root.render(
-	<React.StrictMode>
+if (rootElement) {
+	const root = ReactDOM.createRoot(rootElement)
+
+	root.render(
 		<BrowserRouter basename={import.meta.env.BASE_URL}>
 			<GlobalStyles />
 			<Header />
@@ -20,5 +21,5 @@ root.render(
 			</Routes>
 			<Footer />
 		</BrowserRouter>
-	</React.StrictMode>
-)
+	)
+}
