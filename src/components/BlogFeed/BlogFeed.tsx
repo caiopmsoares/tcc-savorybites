@@ -41,16 +41,14 @@ const BlogFeed: React.FC<BlogFeedProps> = ({ posts }) => {
 					</UserContainer>
 					<UserLine />
 					{post.content.slice(0, 3).map((paragraph, index) => (
-						<Paragraph>
-							{' '}
-							<p key={index}>{paragraph}</p>
+						<Paragraph key={index}>
+							<p>{paragraph}</p>
 						</Paragraph>
 					))}
 					<BlogImage src={coxinhaImage} alt="Imagem do post" />
 					{post.content.slice(3).map((paragraph, index) => (
-						<Paragraph>
-							{' '}
-							<p key={index + post.content.length}>{paragraph}</p>
+						<Paragraph key={index + post.content.length}>
+							<p>{paragraph}</p>
 						</Paragraph>
 					))}
 				</BlogPostContainer>
