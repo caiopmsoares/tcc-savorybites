@@ -7,6 +7,10 @@ export const TarjaContainer = styled.div`
   padding: 0;
   background-color: #f0f0f0;
   white-space: nowrap;
+  @media (max-width: 768px) {
+    height: 150px;
+    overflow-y: hidden;
+  }
 `;
 
 export const Image = styled.img`

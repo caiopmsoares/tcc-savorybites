@@ -24,8 +24,8 @@ export const Hr = styled.hr`
 export const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  justify-content: left;
+  gap: 20px;
   margin-bottom: 10px;
 `;
 

@@ -13,9 +13,12 @@ export const BlogPostContainer = styled.div`
 `;
 
 export const Paragraph = styled.div`
-  padding: 0 0 35px 0;
+  padding: 0 0 1.5em 0;
+  font-size: 1.1em;
   font-weight: 500;
   font-style: italic;
+  line-height: 1.8em;
+  text-align: justify;
 `;
 
 export const BlogPostTitle = styled.h1`
@@ -54,8 +57,8 @@ export const UserLine = styled.hr`
   height: 2px;
   background-color: #c6c6c6;
   border-style: none;
-  margin-bottom: 35px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 `;
 
 export const BlogImage = styled.img`

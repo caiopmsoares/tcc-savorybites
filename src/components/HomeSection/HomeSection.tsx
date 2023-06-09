@@ -118,7 +118,7 @@ const HomeSection: React.FC = () => {
             <ImageTitle>Cheesy bliss bites</ImageTitle>
             <ImageDescription>
               Soft, chewy rolls bursting with cheesy goodness. The perfect blend
-              of savory and indulgence
+              of savory and indulgence.
             </ImageDescription>
             <ReadMore>READ SOON</ReadMore>
           </ImageWrapper>
