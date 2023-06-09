@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// import { ReactComponent as mySvg } from '../../images/logo.svg'
 
 export const HeaderContainer = styled.header`
 	height: 105px;
@@ -17,10 +16,10 @@ export const LogoWrapper = styled.div`
 	margin-right: 20px;
 `
 
-// export const Logo = styled(mySvg)`
-//	height: 90%;
-//	width: 90%;
-//`
+export const Logo = styled.img`
+	height: 90%;
+	width: 90%;
+`
 
 export const IconsContainer = styled.div`
 	display: flex;

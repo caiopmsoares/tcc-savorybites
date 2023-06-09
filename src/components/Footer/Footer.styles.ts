@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-//import { ReactComponent as LogoSvg } from "../../images/logo.svg";
 
 export const FooterContainer = styled.footer`
 	height: 70px;
@@ -24,10 +23,10 @@ export const LogoWrapper = styled.div`
 	}
 `
 
-//export const Logo = styled(LogoSvg)`
-//height: auto;
-//width: 100%;
-//`;
+export const Logo = styled.img`
+	height: auto;
+	width: 100%;
+`
 
 export const Text = styled.p`
 	font-weight: 400;

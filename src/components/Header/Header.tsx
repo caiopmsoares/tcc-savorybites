@@ -10,29 +10,35 @@ import {
 import enIcon from '../../images/english.png'
 import ptIcon from '../../images/portuguese.png'
 import tsIcon from '../../images/translate.png'
+import Logo from '../../images/logo.png'
+import { Link } from 'react-router-dom'
 
 const Header: React.FC = () => {
 	return (
 		<HeaderContainer>
 			<div>
-				<LogoWrapper>logo aqui</LogoWrapper>
+				<LogoWrapper>
+					<Link to="/">
+						<img src={Logo} alt="Logo" />
+					</Link>
+				</LogoWrapper>
 			</div>
 			<div>
 				<IconsContainer>
 					<RoundIcon>
-						<a href="#">
+						<Link to="#">
 							<img src={enIcon} alt="English" />
-						</a>
+						</Link>
 					</RoundIcon>
 					<RoundIcon>
-						<a href="#">
+						<Link to="#">
 							<img src={ptIcon} alt="Portuguese" />
-						</a>
+						</Link>
 					</RoundIcon>
 					<RoundIcon>
-						<a href="#">
+						<Link to="#">
 							<img src={tsIcon} alt="Translated" />
-						</a>
+						</Link>
 					</RoundIcon>
 				</IconsContainer>
 			</div>
