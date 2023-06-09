@@ -2,7 +2,6 @@ import React from 'react'
 
 import {
 	HeaderContainer,
-	//Logo,
 	LogoWrapper,
 	IconsContainer,
 	RoundIcon,
@@ -26,17 +25,17 @@ const Header: React.FC = () => {
 			<div>
 				<IconsContainer>
 					<RoundIcon>
-						<Link to="#">
+						<Link to="/">
 							<img src={enIcon} alt="English" />
 						</Link>
 					</RoundIcon>
 					<RoundIcon>
-						<Link to="#">
+						<Link to="/homeportuguese">
 							<img src={ptIcon} alt="Portuguese" />
 						</Link>
 					</RoundIcon>
 					<RoundIcon>
-						<Link to="#">
+						<Link to="/hometranslated">
 							<img src={tsIcon} alt="Translated" />
 						</Link>
 					</RoundIcon>
