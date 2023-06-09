@@ -11,6 +11,9 @@ import {
 	Paragraph,
 } from './BlogFeed.styles'
 
+import userIcon from '../../images/user-icon.png'
+import coxinhaImage from '../../images/coxinha.png'
+
 interface BlogPost {
 	id: string
 	content: string[]
@@ -30,10 +33,7 @@ const BlogFeed: React.FC<BlogFeedProps> = ({ posts }) => {
 				<BlogPostContainer key={post.id}>
 					<BlogPostTitle>CHICKEN CLOUD BITES</BlogPostTitle>
 					<UserContainer>
-						<UserIcon
-							src={require('../../images/user-icon.png')}
-							alt="Ícone do usuário"
-						/>
+						<UserIcon src={userIcon} alt="Ícone do usuário" />
 						<div>
 							<UserName>{post.username}</UserName>
 							<DatePublished>{post.date}</DatePublished>
@@ -46,10 +46,7 @@ const BlogFeed: React.FC<BlogFeedProps> = ({ posts }) => {
 							<p key={index}>{paragraph}</p>
 						</Paragraph>
 					))}
-					<BlogImage
-						src={require('../../images/coxinha.png')}
-						alt="Imagem do post"
-					/>
+					<BlogImage src={coxinhaImage} alt="Imagem do post" />
 					{post.content.slice(3).map((paragraph, index) => (
 						<Paragraph>
 							{' '}
